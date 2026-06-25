@@ -1,11 +1,8 @@
 import { test, expect } from '@playwright/test';
 
-test.only('Demoblaze contex trace practice ', async ({ page ,context }) => {
+test.only('Demoblaze contex trace practice ', async ({ page }) => {
 
-    await context.tracing.start({
-        screenshots: true,
-        snapshots: true
-    });
+   
 
     console.log('BASE_URL:', process.env.dBASE_URL);
     console.log('USERNAME:', process.env.dUSERNAME);
@@ -37,5 +34,4 @@ test.only('Demoblaze contex trace practice ', async ({ page ,context }) => {
 
 
 
-     await context.tracing.stop({ path: 'trace.zip'});
-});
+    
