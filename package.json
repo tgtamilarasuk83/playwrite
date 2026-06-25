@@ -6,7 +6,8 @@
   "scripts": {
     "test:prod": "cross-env ENV=prod playwright test",
     "test:qa": "cross-env ENV=qa playwright test",
-    "test:uat": "cross-env ENV=uat  playwright test"
+    "test:uat": "cross-env ENV=uat  playwright test",
+    "test:demo": "cross-env ENV=demo  playwright test"
   },
   "keywords": [],
   "author": "",
