@@ -32,6 +32,6 @@ test.only('Demoblaze contex trace practice ', async ({ page }) => {
     await expect(page.locator('//*[@id="nameofuser"]'))
         .toContainText('Welcome');
 
-
+});
 
     
