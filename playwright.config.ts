@@ -1,4 +1,5 @@
 import { defineConfig, devices } from '@playwright/test';
+import { on } from 'cluster';
 import dotenv from 'dotenv';
 import path from 'path';
 
@@ -11,11 +12,15 @@ dotenv.config({
 console.log("BASE_URL loaded:", process.env.BASE_URL);
 
 export default defineConfig({
-  testDir: './testpractice',
+  testDir: './demoblazeapplication',
+ 
 
+ 
   use: {
-    trace: 'on-first-retry',
+   
     screenshot: 'only-on-failure',
+    //  trace :'on'
+  
   },
 
   projects: [
