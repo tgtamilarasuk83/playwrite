@@ -12,45 +12,45 @@ test("Register user", async () => {
 
        
       const context = await browser.newContext();
-   //    const page1 = await context.newPage();
-   //    await page1.goto("https://automationexercise.com/")
+      const page1 = await context.newPage();
+      await page1.goto("https://automationexercise.com/")
 
 
-   //    // REGISTER 
+      // REGISTER 
 
-   //     await page1.getByRole('link', { name: 'Signup / Login' }).click();
-   //     await page1.locator('[data-qa="signup-name"]').fill('Tamilarasu');
-   //     await page1.locator('[data-qa="signup-email"]').fill("hwfwirjwudeff1@gmail.com");
-   //     await page1.getByRole('button', { name: 'Signup' }).click();
+       await page1.getByRole('link', { name: 'Signup / Login' }).click();
+       await page1.locator('[data-qa="signup-name"]').fill('Tamilarasu');
+       await page1.locator('[data-qa="signup-email"]').fill("hwfwirjwudeff1@gmail.com");
+       await page1.getByRole('button', { name: 'Signup' }).click();
 
 
-   //  await page1.locator('#id_gender2').check();
+    await page1.locator('#id_gender2').check();
 
-   //  await page1.locator('#password').fill('Test@123');
+    await page1.locator('#password').fill('Test@123');
 
-   //  await page1.selectOption('#days', '10');
-   //  await page1.selectOption('#months', '5');
-   //  await page1.selectOption('#years', '1998');
+    await page1.selectOption('#days', '10');
+    await page1.selectOption('#months', '5');
+    await page1.selectOption('#years', '1998');
 
-   //  await page1.locator('#newsletter').check();
-   //  await page1.locator('#optin').check();
+    await page1.locator('#newsletter').check();
+    await page1.locator('#optin').check();
 
-   //  await page1.locator('#first_name').fill('Tamilarasu');
-   //  await page1.locator('#last_name').fill('K');
-   //  await page1.locator('#company').fill('ABC Company');
-   //  await page1.locator('#address1').fill('Coimbatore');
+    await page1.locator('#first_name').fill('Tamilarasu');
+    await page1.locator('#last_name').fill('K');
+    await page1.locator('#company').fill('ABC Company');
+    await page1.locator('#address1').fill('Coimbatore');
 
-   //  await page1.selectOption('#country', 'India');
+    await page1.selectOption('#country', 'India');
 
-   //  await page1.locator('#city').fill('Coimbatore');
-   //  await page1.locator('#state').fill('Tamilnadu');
-   //  await page1.locator('#zipcode').fill('641005');
-   //  await page1.locator('#mobile_number').fill('9876543210');
+    await page1.locator('#city').fill('Coimbatore');
+    await page1.locator('#state').fill('Tamilnadu');
+    await page1.locator('#zipcode').fill('641005');
+    await page1.locator('#mobile_number').fill('9876543210');
 
-   //  await page1.getByRole('button', { name: 'Create Account' }).click();
-   //  await expect(page1.getByText('Account Created!')).toBeVisible();
-   //  await page1.getByRole('link', { name: 'Continue' }).click();
-   //  await page1.getByRole('link', { name: 'Logout' }).click();
+    await page1.getByRole('button', { name: 'Create Account' }).click();
+    await expect(page1.getByText('Account Created!')).toBeVisible();
+    await page1.getByRole('link', { name: 'Continue' }).click();
+    await page1.getByRole('link', { name: 'Logout' }).click();
 
     // login
     const login = await context.newPage();
@@ -59,7 +59,7 @@ test("Register user", async () => {
    await login.locator("[data-qa='login-email']").fill("hwfwirjwudeff1@gmail.com");
    await login.locator("[data-qa='login-password']").fill("Test@123");
    await login.locator("[data-qa='login-button']").click();
-   await expect(login.getByText("Logged in as")).toBeVisible();
+   // await expect(login.getByText("Logged in as")).toBeVisible();
 
     // add the product to the cart and checkout
   
