@@ -3,13 +3,13 @@ import { on } from 'cluster';
 import dotenv from 'dotenv';
 import path from 'path';
 
-const envName = process.env.ENV || 'uat';
+// const envName = process.env.ENV || 'uat';
 
-dotenv.config({
-  path: path.resolve(process.cwd(), `env/.env.${envName}`)
-});
+// dotenv.config({
+//   path: path.resolve(process.cwd(), `env/.env.${envName}`)
+// });
 
-console.log("BASE_URL loaded:", process.env.BASE_URL);
+// console.log("BASE_URL loaded:", process.env.BASE_URL);
 
 export default defineConfig({
   // testDir: './demoblazeapplication',
