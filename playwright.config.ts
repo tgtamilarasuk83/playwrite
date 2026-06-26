@@ -12,7 +12,9 @@ dotenv.config({
 console.log("BASE_URL loaded:", process.env.BASE_URL);
 
 export default defineConfig({
-  testDir: './demoblazeapplication',
+  // testDir: './demoblazeapplication',
+
+//  testMatch: '**/*.spec.ts',
  
 
  
