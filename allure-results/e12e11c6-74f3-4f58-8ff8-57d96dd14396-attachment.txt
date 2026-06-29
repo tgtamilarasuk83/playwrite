@@ -1,4 +1,0 @@
-Test started
-Page loaded
-Before click
-After click

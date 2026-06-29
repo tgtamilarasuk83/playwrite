@@ -1,5 +1,0 @@
-Promise { <pending> }
-https://www.testmuai.com/selenium-playground/simple-form-demo/
-Input value BEFORE click: i am entering a message
-Input value AFTER click: i am entering a message
-Paragraph: 

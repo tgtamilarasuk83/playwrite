@@ -1,3 +1,0 @@
-sum1: 20
-sum2: 20
-Result text: 
