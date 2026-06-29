@@ -1,0 +1,4 @@
+Please enter something:
+prompt
+Do you confirm this action?
+confirm
