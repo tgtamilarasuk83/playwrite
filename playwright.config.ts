@@ -15,6 +15,12 @@ export default defineConfig({
   // testDir: './demoblazeapplication',
 
 //  testMatch: '**/*.spec.ts',
+
+testMatch: [
+    'tests/parameterization/**/*.ts',
+    'tests/pendingtask/**/*.ts',
+    'tests/softassertionandskip/**/*.ts'
+  ],
  
 
  
