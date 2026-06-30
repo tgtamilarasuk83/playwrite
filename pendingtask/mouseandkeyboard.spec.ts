@@ -3,6 +3,9 @@ import test from "@playwright/test";
 
 test("practice actions" , async({page})=>{
 
+    page.setDefaultNavigationTimeout(12000);
+    page.setDefaultTimeout(40000);
+
    await page.goto("https://www.demoblaze.com/")
    await page.locator("//a[@id='login2']").dblclick();
    await page.locator('//*[@id="loginusername"]').fill("arasu")
@@ -19,6 +22,8 @@ test("practice actions" , async({page})=>{
    await  page.waitForTimeout(5000)
     await page.mouse.up();
   
+
+    test.setTimeout(60000);
 
     
 

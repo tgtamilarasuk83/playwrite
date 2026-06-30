@@ -1,7 +1,11 @@
 import test, { expect } from "@playwright/test";
 
 
+
+
 test("handling dropdowns", async({page})=>{
+
+    
 
     await page.goto("https://testautomationpractice.blogspot.com/")
      const elements = await page.locator('//*[@id="post-body-1307673142697428135"]/div[4]').textContent();

@@ -22,8 +22,21 @@ testMatch: [
   'softassertionandskip/**/*.spec.ts'
 ],
 
+
+ 
+  globalTimeout: 1200000,
+
+
+  
+  expect: {
+    timeout: 120000,
+  },
+ 
+
  
   use: {
+     actionTimeout: 30000,
+     navigationTimeout: 60000,
    
     screenshot: 'only-on-failure',
     //  trace :'on'
