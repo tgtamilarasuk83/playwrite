@@ -16,11 +16,11 @@ export default defineConfig({
 
 //  testMatch: '**/*.spec.ts',
 
-testMatch: [
-  'parameteriztion/**/*.spec.ts',
-  'pendingtask/**/*.spec.ts',
-  'softassertionandskip/**/*.spec.ts'
-],
+// testMatch: [
+//   'parameteriztion/**/*.spec.ts',
+//   'pendingtask/**/*.spec.ts',
+//   'softassertionandskip/**/*.spec.ts'
+// ],
 
 
  

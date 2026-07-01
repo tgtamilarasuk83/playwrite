@@ -1,0 +1,25 @@
+[
+  {
+    "testname": "validlogin",
+    "username": "arasu",
+    "password": "arasu",
+    "expected_result": "Success",
+    "expected_message": "Welcome"
+  },
+  {
+    "testname": "invalidlogin",
+    "username": "arasu123",
+    "password": "arasu123",
+    "expected_result": "Failure",
+    "expected_message": "Incorrect password"
+  },
+ 
+{
+    "testname": "invalidlogin",
+    "username": " ",
+    "password": " ",
+    "expected_result": "Failure",
+    "expected_message": "Please fill out Username and Password."
+  }
+
+]
